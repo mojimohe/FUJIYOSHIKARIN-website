@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>FujiyoshiKarin - 首页</title>
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/content.css" rel="stylesheet">、
+		<link href="css/layout.css" rel="stylesheet">
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			.shell{
+				width: 100%;
+				height: 700px;
+				display: flex;
+			}
+			.box{
+				flex: 1;
+				overflow: hidden;
+				transition: .5s;
+				margin: 0 20px;
+				box-shadow: 10-x 10px rgba(0, 0, 0, .5);
+				border-radius: 20px;
+				border: 10px solid #fff;
+				background-color: #fff;
+			}
+			.box>img{
+				width: 100%;
+				height: 85%;
+				object-fit: cover;
+				transition: .5s;
+			}
+			/*  */
+			.box>span{
+				font: 200 45px "优设标题黑";
+				text-align: center;
+				height: 15%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			/* 当鼠标悬浮在图像上时 */
+			.box:hover{
+				flex-basis: 40%;
+			}
+			.box:hover>img{
+				width: 100%;
+				height: 100%;
+			}
+			.banner img {
+			    width: 100%;
+				height: 100%;
+			
+			}
+		/* 主体容器宽度 */
+			
+			/* 页眉样式 */
+			header {
+			    background: #9400D3;
+			    line-height: 60px;
+			    padding: 0 15px;
+			}
+			
+			/* 后代选择哦 */
+			header .logo {
+				/* 后代选择哦 */
+			    font-size: 24px;
+			    color: #fff;
+			    font-weight: bold;
+			    line-height: 60px;
+			}
+			
+			header .nav li {
+			    width: 120px;
+			    text-align: center;
+			    font-size: 16px;
+			    display: inline-block;
+			}
+			
+			header .nav li a {
+			    color: #fff;
+			}
+			
+			/* .banner img {
+			    width: 100%;
+				height: 100%;
+			} */
+			
+			/* 内容区域样式 */
+			.content {
+			    background: #F4F8FF;
+			    padding: 15px;
+			}
+			footer {
+			    background: #9400D3;
+			    line-height: 60px;
+			    padding: 0 15px;
+			    text-align: center;
+			    font-size: 14px;
+			    color: #fff;
+			}
+			 body{
+				            /* 设置背景渐变 */
+				            background-image: linear-gradient(to left,
+				            #9c88ff,#FF6699);
+				            display: flex;
+				            justify-content: center;
+				        }
+		</style>
+	</head>
+	<body>
+		<div  class="wrapin">
+			<header class="clearfix">
+			    <a href="index.html" class="logo lt">藤吉夏铃</a>
+			    <ul class="nav rt">
+			       <li><a href="index .html">首页</a></li>
+			       <li><a href="FestOne.html">个人介绍</a></li>
+			       <li><a href="new_file.html">相册</a></li>
+			       <li>
+			       	<a href="VaruetShow.html">名场面</a>
+			       </li>
+			       <li><a href="form.html">登录</a></li>
+			    </ul>
+			</header>
+			<div class="banner">
+				<div class="shell">
+					<div class="box">
+						<img src="imgs/香港1.jpg"/>
+					</div>
+					<div class="box">
+						<img src="imgs/微信图片_202411091036593.jpg"/>
+					</div>
+					<div class="box">
+						<img src="imgs/mmexport1689477315883.jpg"/>
+					</div>
+					<div class="box">
+						<img src="imgs/img-1721806635031370e2651e53f2b82c1b5718ab428ed65042bf170c82c90f8af6ea6c91b3deb8d.jpg"/>
+					</div>
+				</div>
+			</div>
+			<!-- 内容区域 -->
+			<div class="content">
+				<div class="title">
+					<h2>团体介绍</h2>
+				</div>
+				<div class="con_top clearfix">
+				    <div class="pic lt">
+				        <img src="imgs/AE9F80BD866946CF9AFF02275A39C037.jpg" alt="合照">
+				    </div>
+				    <div class="text rt">
+				        <p><strong>樱坂46（英文：Sakurazaka46）</strong>成立于2020年10月14日，是日本索尼音乐娱乐旗下的大型女子偶像组合，亦是乃木坂46的官方姐妹团体。队长在2022年11月9日后由松田里奈担任。组合前身以“欅坂46”为名活动。</p>
+				        <p>2015年8月21日，欅坂46成立。2016年4月6日发行首张单曲作品《サイレントマジョリティー》后正式出道，单曲在发售后首周夺得日本公信榜周榜冠军，并刷新日本公信榜女歌手出道单曲首周销量记录。</p>
+				        
+				        <p>2020年7月16日，欅坂46宣布将更换组合名称，以新的团名再出发 。10月14日，组合更名为“樱坂46” 。
+				    </div>
+				</div>
+			</div>
+			<footer>
+			    FujiyoshiKarin
+			</footer>
+		</div>
+		
+	</body>
+</html>

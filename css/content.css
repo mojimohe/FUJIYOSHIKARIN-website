@@ -1,0 +1,43 @@
+/* 概述区域样式 */
+/* 相当于第一块部分我们单独做了一些内容 */
+.con_top .pic {
+    width: 300px;
+}
+
+.con_top .pic img {
+    width: 100%;
+}
+
+.con_top .text {
+    width: 650px;
+    line-height: 28px;
+    color: #333;
+}
+
+/* 标题样式 */
+.title {
+    background: #FF6699;
+    line-height: 40px;
+    padding: 0 15px;
+    margin: 20px 0;
+}
+
+.title h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* 文字段落样式 */
+.text_a {
+    line-height: 28px;
+    color: #333;
+}
+
+.text_a img {
+    margin-left: 15px;
+}
+.heimu,.heimu a,a .heimu,a.new .heimu,span.heimu a:visited,span.heimu a.new,span.heimu a.external:visited,span.heimu a.extw:visited,span.heimu a.nw-dismbig,span.heimu a.nw-redirect{
+	transition: color 0.13s ubic-bezier(0, 0, 1, 1) linear;
+	color: var(--heimu-color);
+	text-shadow: none;
+}

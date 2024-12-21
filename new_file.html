@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/content.css">
+		<link rel="stylesheet" href="css/renwu.css">
+		<title>FujiyoshiKarin</title>
+		<style>
+			*{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #fffaff;
+				 min-block-size: 100%;
+				            display: grid;
+				            place-content: center;
+				            /* 设置上下内边距为 30% 视口高度 */
+				            padding-block: 30dvh;
+				            background: #9400D3;
+			}
+			main{
+				display: grid;
+				gap: 2rem;
+				grid-template-columns: repeat(3,500px);
+				overflow-y: hidden;
+				padding: 50px;
+			}
+			section{
+				display: flex;
+				gap: 2rem;
+				flex-direction: column;
+				
+				
+			}
+			section:nth-child(1),
+			section:nth-child(3){
+				/* 应用平滑动画 */
+				animation: scroller linear;
+				/*动画根据滚动进行 */
+				animation-timline:scroll(root);
+				/* 子元素反转排列 */
+				flex-direction: column-reverse;
+				/* 初始位置设置为底部 */
+				teanslate:0% calc(-100% +100vh);
+			}
+			section img {
+				box-shadow:0 0 10px #0002;
+				border-radius:5px ;
+				transition: .3s;
+			}
+			section img:hover{
+				transform:scale(1.05);
+				box-shadow: 0 0 20px rgba(150,50,50,0.5);
+			}
+			@keyframes scroller{
+				to{
+					/* 最终位置设置为顶部 */
+					translate: 0% calc(100% - 100vh);
+				}
+			}
+			@keyframes slide-fade-in {
+			            from {
+			                opacity: 0;
+			                box-shadow: none;
+			                transform: scale(.8) translateY(15vh);
+			            }
+			}
+			 
+			
+			        .card img {
+			            width: 100%;
+			            height: 100%;
+			        }
+			/* 后代选择哦 */
+			header .logo {
+				/* 后代选择哦 */
+			    font-size: 24px;
+			    color: #fff;
+			    font-weight: bold;
+			    line-height: 60px;
+			}
+			
+			header .nav li {
+			    width: 120px;
+			    text-align: center;
+			    font-size: 16px;
+			    display: inline-block;
+			}
+			
+			header .nav li a {
+			    color: #fff;
+			}
+			
+			.banner img {
+			    width: 100%;
+			}
+			
+			/* 内容区域样式 */
+			.content {
+			    background: #F4F8FF;
+			    padding: 15px;
+			}
+			header {
+			    background: #9400D3;
+			    line-height: 60px;
+			    padding: 0 15px;
+			}
+			footer {
+			    background: #9400D3;
+			    line-height: 60px;
+			    padding: 0 15px;
+			    text-align: center;
+			    font-size: 14px;
+			    color: #fff;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="wrapin" >
+			<header class="clearfix">
+			    <a href="index .html" class="logo">藤吉夏铃</a>
+			    <ul class="nav rt">
+			      <li><a href="index .html">首页</a></li>
+			      <li><a href="FestOne.html">个人介绍</a></li>
+			      <li><a href="new_file.html">相册</a></li>
+			      <li>
+			      	<a href="VaruetShow.html">名场面</a>
+			      </li>
+			      <li><a href="form.html">登录</a></li>
+			    </ul>
+			</header>
+			
+			<main>
+				<section>
+					<img  src="imgs/1730712624294.jpg"/>
+					<img src="imgs/香港1.jpg"/>
+					<img src="imgs/tgc秀.jpg"/>
+					<img src="imgs/韩国音乐节.jpg"/>
+					<img src="imgs/微信图片_202411091036595.jpg"/>
+					<img src="imgs/微信图片_202411091042152.jpg"/>
+					<img src="imgs/img-172269082776777f4e7adb227a36233a0b78920fee87d4deb71b0ba05cba4b6c7b7f60052ddc3.jpg"/>
+					<img src="imgs/Image_1725696437752.jpg"/>
+					<img src="imgs/60562F94B3C905464F446F94A3626056.jpg"/>
+					<img src="imgs/img-1720868671434fd5ee6fdde7efa6a42e2230adc009ef96e839717105842474f1799aef1c5c22f.jpg"/>
+					<img src="imgs/img-17242618661962638e21678df48a822d4234845496af615fa51af957c6d75c13c1e3920881243.jpg"/>
+					<img src="imgs/Image_1730461076234.jpg">
+					<img src="imgs/Image_1730461096611.png"/>
+					<img  src="imgs/Image_1730657946277.jpg"/>
+				</section>
+				<section>
+					<img  src="imgs/DAD2A9D0AD27C934555C01CE8276188C.jpg"/>
+					<img src="imgs/img-17245804222711773f9e0a2313853ce7c9538c36691862580e741ed594b6e5845f567346c77dd.jpg"/>
+					<img src="imgs/微信图片_202411091042203.jpg"/>
+					<img src="imgs/img-17223219555784650bc1dae45cc16e57ed853d9284c6248d918a4463d68c1621147780d331436.jpg"/>
+					<img src="imgs/Image_1730455444720.jpg"/>
+					<img src="imgs/Image_1730705400067.jpg"/>
+					<img src="imgs/Image_1730461076234.jpg"/>
+					<img src="imgs/F6974FAC7302175C378D97C80B0E5568.jpg"/>
+					<img src="imgs/Image_1728113115917.jpg"/>
+					<img src="imgs/Image_1730704665691.jpg"/>
+					<img src="imgs/img-1715089552796ccf857febf72269cd9da68f1439a58d2f702821c921c31b5884beb6622c5c9ca.jpg"/>
+					<img src="imgs/Image_1730655639448.jpg"/>
+					<img src="imgs/60562F94B3C905464F446F94A3626056.jpg"/>
+					<img src="imgs/微信图片_20241111221344.jpg"/>
+				</section>
+				<section>
+					<img  src="imgs/1730712624301.jpg"/>
+					<img src="imgs/1730712159468.jpg"/>
+					<img src="imgs/img-1720868663062db0898a8d89bf47efbab5efcd4515b7aba0aeff224a2f2faf9df27c0f50c8dc3.jpg"/>
+					<img src="imgs/img-17223218257369c9c741bdafc7c33e5d1b297af7316c97a6120d84e8388b5c8b5486a11de107b.jpg"/>
+					<img src="imgs/Image_1728830098199.jpg"/>
+					<img src="imgs/img-1721806637823b78006af6ac47e6d22dcf61361ac43d294f6f3f342ebdd172a6b4e9aa88333be.jpg"/>
+					<img src="imgs/微信图片_202411112213581.jpg"/>
+					<img src="imgs/img-1723643558289da97f1a3b61b0d26e8c72741af0489c5978e8ac40c367d76aff4a0fadcebb65c.jpg"/>
+					<img src="imgs/img-172232193842246611b8849400050559b369a5679385ce7c9ee5da3ff4b7d3e19aef40a817f5f.jpg"/>
+					<img src="imgs/img-1718634265209b18e8c30fb4b9a14ee3ffab2adbc99b63645f20497021bda3e06b08cc0236eec.jpg"/>
+					<img src="imgs/Image_1726666179232.jpg"/>
+					<img src="imgs/img-1721710047695ab70c4d23686b9e341e03e7aaa05fd98dab1cb5e8703927f0a14392e4d4f3c27.jpg"/>
+					<img  src="imgs/60562F94B3C905464F446F94A3626056.jpg"/>
+				</section>
+			</main>
+			<footer>
+				FujiyoshiKarin
+			</footer>
+		</div>
+		
+	</body>
+</html>
